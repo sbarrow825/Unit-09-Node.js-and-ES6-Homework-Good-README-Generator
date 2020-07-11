@@ -178,4 +178,7 @@ Insert picture of command line prompts followed by picture of the generated READ
 
 ## Questions
 
+![Github Profile Picture](https://github.com/sbarrow825.png)
+
 For any questions concerning this project, please feel free to email me at sbarrow825@berkeley.edu
+
