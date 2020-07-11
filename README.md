@@ -1,30 +1,25 @@
 # Unit 09 Node.js and ES6+ Homework: Good README Generator
 
-## Title
-
-* Testing Title
-
-## Build Success Status
-
-![Master Branch Build Status](https://img.shields.io/appveyor/build/sbarrow825/https://github.com/sbarrow825/Unit-09-Node.js-and-ES6-Homework-Good-README-Generator/master)
-
 ## Description
 
-* Testing Description
+Automatic README.md generator for Github projects
 
 ## Table of Contents
 
-* Testing Table of Contents
-  * Table entry 1
-  * Table entry 2
-  * Table entry 3
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Dependencies](#Dependencies)
+* [Contributions](#Contributions)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 ## Installation
 
 Make sure that you've downloaded [Node.js from the nodejs.org website](https://nodejs.org/en/download/), then run the following command in the working directory of this project to install the necessary node modules
 
 ```sh
-node index.js
+npm install
 ```
 
 ## Usage
@@ -38,6 +33,12 @@ node index.js
 ## License
 
 ![MIT License](https://img.shields.io/npm/l/inquirer)
+
+## Dependencies
+
+List of dependency statuses for all packages used in this project
+
+* npm Inquirer ![](https://img.shields.io/librariesio/release/npm/inquirer)
 
 ## Contributions
 
