@@ -182,7 +182,7 @@ The following shows a screenshot of terminal inputs used to run the program
 
 The following shows the md file generated from the above terminal inputs
 
-![md file](mdFile.mp4)
+![md file](mdFile.gif)
 
 ## Questions
 
