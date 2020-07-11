@@ -8,33 +8,48 @@ function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
-      name: "name",
-      message: "What is your name?"
+      name: "title",
+      message: "What is the title of your project?"
     },
     {
       type: "input",
-      name: "location",
-      message: "Where are you from?"
+      name: "description",
+      message: "Write a description of your project"
     },
     {
       type: "input",
-      name: "hobby",
-      message: "What is your favorite hobby?"
+      name: "role",
+      message: "Let's write a user story for your project in the form: AS A <role>, I WANT <product/service>, SO THAT <goal/desire>. What is the role of the person using this project?"
     },
     {
       type: "input",
-      name: "food",
-      message: "What is your favorite food?"
+      name: "product",
+      message: "What is the product/service this project offers?"
     },
     {
       type: "input",
-      name: "github",
-      message: "Enter your GitHub Username"
+      name: "goal",
+      message: "What is the goal of the person using this project?"
     },
     {
       type: "input",
-      name: "linkedin",
-      message: "Enter your LinkedIn URL."
+      name: "testGIF",
+      message: "Insert the path/link to a gif/video of you testing your project, i.e. you running your project demonstrating its functionality"
+    },
+    {
+      type: "input",
+      name: "githubUsername",
+      message: "Enter your Github username"
+    },
+    {
+      type: "input",
+      name: "repoName",
+      message: "Enter the name of the repo you are creating this README.md for"
+    },
+    {
+      type: "input",
+      name: "email",
+      message: "Enter the email address associated with your Github account"
     }
   ]);
 }
@@ -69,11 +84,13 @@ async function init() {
   try {
     const answers = await promptUser();
 
-    const html = generateHTML(answers);
+    console.log(answers);
 
-    await writeFileAsync("index.html", html);
+    // const html = generateHTML(answers);
 
-    console.log("Successfully wrote to index.html");
+    // await writeFileAsync("index.html", html);
+
+    console.log("Successfully made your personal README.md");
   } catch(err) {
     console.log(err);
   }
