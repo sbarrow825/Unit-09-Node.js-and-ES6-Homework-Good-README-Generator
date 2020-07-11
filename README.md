@@ -1,99 +1,180 @@
 # Unit 09 Node.js and ES6+ Homework: Good README Generator
 
-Create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
+## Title
+
+* Testing Title
+
+## Build Success Status
+
+![Master Branch Build Status](https://img.shields.io/appveyor/build/sbarrow825/https://github.com/sbarrow825/Unit-09-Node.js-and-ES6-Homework-Good-README-Generator/master)
+
+## Description
+
+* Testing Description
+
+## Table of Contents
+
+* Testing Table of Contents
+  * Table entry 1
+  * Table entry 2
+  * Table entry 3
+
+## Installation
+
+Make sure that you've downloaded [Node.js from the nodejs.org website](https://nodejs.org/en/download/), then run the following command in the working directory of this project to install the necessary node modules
 
 ```sh
 node index.js
 ```
 
-The user will be prompted for their GitHub username and other information pertaining to the project the README is for.
+## Usage
 
-The README will be populated with the following:
+In order to run the program, type the following command into your command line with this project in your current working directory
 
-* At least one badge
-* Project title
-* Description
-* Table of Contents
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
-  * User GitHub profile picture
-  * User GitHub email
-
-Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
-
-```
-AS A developer
-
-I WANT a README generator
-
-SO THAT I can easily put together a good README for a new project
+```sh
+node index.js
 ```
 
-Refer to the [Good README guide](../../01-html-git-css/homework/Good-README-Guide/README.md).
+## License
 
-## Business Context
+![MIT License](https://img.shields.io/npm/l/inquirer)
 
-When creating an open source project on GitHub, it is important to have a quality README with information about the app--what is the app for, how to use the app, how to install it, how to report issues, and how to make contributions so that other developers are more likely to use and contribute to the success of the project. A command-line application will allow for quick and easy generation of a project README to get started quickly. This will allow a project creator to spend more time working on finishing the project and less time creating a good README.
+## Contributions
 
-## Minimum Requirements
+The following in a copy of the [Contributor Covenant v2.0](https://www.contributor-covenant.org/). Please read before contributing to understand contribution guidelines.
 
-* Functional, deployed application.
+### Our Pledge
 
-* GitHub repository with a unique name and a README describing project.
+We as members, contributors, and leaders pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, religion, or sexual identity
+and orientation.
 
-* The generated README includes the following sections: 
-  * Title
-  * Description
-  * Table of Contents
-  * Installation
-  * Usage
-  * License
-  * Contributing
-  * Tests
-  * Questions
+We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community.
 
-* The generated README includes 1 badge that's specific to the repository.
+### Our Standards
 
-```
-GIVEN the developer has a GitHub profile and a repository
+Examples of behavior that contributes to a positive environment for our
+community include:
 
-WHEN prompted for the developer's GitHub username and repo specific information
+* Demonstrating empathy and kindness toward other people
+* Being respectful of differing opinions, viewpoints, and experiences
+* Giving and gracefully accepting constructive feedback
+* Accepting responsibility and apologizing to those affected by our mistakes,
+  and learning from the experience
+* Focusing on what is best not just for us as individuals, but for the
+  overall community
 
-THEN a README for the repo is generated
-```
-- - -
+Examples of unacceptable behavior include:
 
-## Commit Early and Often
+* The use of sexualized language or imagery, and sexual attention or
+  advances of any kind
+* Trolling, insulting or derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as a physical or email
+  address, without their explicit permission
+* Other conduct which could reasonably be considered inappropriate in a
+  professional setting
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+### Enforcement Responsibilities
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+Community leaders are responsible for clarifying and enforcing our standards of
+acceptable behavior and will take appropriate and fair corrective action in
+response to any behavior that they deem inappropriate, threatening, offensive,
+or harmful.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+Community leaders have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, and will communicate reasons for moderation
+decisions when appropriate.
 
-Follow these guidelines for committing:
+### Scope
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+This Code of Conduct applies within all community spaces, and also applies when
+an individual is officially representing the community in public spaces.
+Examples of representing our community include using an official e-mail address,
+posting via an official social media account, or acting as an appointed
+representative at an online or offline event.
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+### Enforcement
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported to the community leaders responsible for enforcement at
+sbarrow825@berkeley.edu
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+All complaints will be reviewed and investigated promptly and fairly.
 
-We would like you to have more than 200 commits by graduation, so commit early and often!
+All community leaders are obligated to respect the privacy and security of the
+reporter of any incident.
 
-## Submission on BCS
+#### Enforcement Guidelines
 
-You are required to submit the following:
+Community leaders will follow these Community Impact Guidelines in determining
+the consequences for any action they deem in violation of this Code of Conduct:
 
-* A video demonstrating the entirety of the app's functionality 
+#### 1. Correction
 
-* A generated README.md file for a project repo.
+**Community Impact**: Use of inappropriate language or other behavior deemed
+unprofessional or unwelcome in the community.
 
-* The URL of the GitHub repository
+**Consequence**: A private, written warning from community leaders, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.
 
+#### 2. Warning
+
+**Community Impact**: A violation through a single incident or series
+of actions.
+
+**Consequence**: A warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or
+permanent ban.
+
+#### 3. Temporary Ban
+
+**Community Impact**: A serious violation of community standards, including
+sustained inappropriate behavior.
+
+**Consequence**: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.
+
+#### 4. Permanent Ban
+
+**Community Impact**: Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior,  harassment of an
+individual, or aggression toward or disparagement of classes of individuals.
+
+**Consequence**: A permanent ban from any sort of public interaction within
+the community.
+
+### Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+version 2.0, available at
+https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+
+Community Impact Guidelines were inspired by [Mozilla's code of conduct
+enforcement ladder](https://github.com/mozilla/diversity).
+
+[homepage]: https://www.contributor-covenant.org
+
+For answers to common questions about this code of conduct, see the FAQ at
+https://www.contributor-covenant.org/faq. Translations are available at
+https://www.contributor-covenant.org/translations.
+
+## Tests
+
+Insert picture of command line prompts followed by picture of the generated README.md
+
+## Questions
+
+For any questions concerning this project, please feel free to email me at sbarrow825@berkeley.edu
