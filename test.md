@@ -1,76 +1,9 @@
-const inquirer = require("inquirer");
-const fs = require("fs");
-const util = require("util");
 
-const writeFileAsync = util.promisify(fs.writeFile);
-
-function promptUser() {
-  return inquirer.prompt([
-    {
-      type: "input",
-      name: "title",
-      message: "What is the title of your project?"
-    },
-    {
-      type: "input",
-      name: "description",
-      message: "Write a description of your project"
-    },
-    {
-      type: "input",
-      name: "installation",
-      message: "Enter the installation intructions for the user to be able to use your project"
-    },
-    {
-      type: "input",
-      name: "usage",
-      message: "Enter the usage intructions for how the user should use your project"
-    },
-    {
-      type: "input",
-      name: "role",
-      message: "Let's write a user story for your project in the form: AS A <role>, I WANT <product/service>, SO THAT <goal/desire>. What is the role of the person using this project?"
-    },
-    {
-      type: "input",
-      name: "product",
-      message: "What is the product/service this project offers?"
-    },
-    {
-      type: "input",
-      name: "goal",
-      message: "What is the goal of the person using this project?"
-    },
-    {
-      type: "input",
-      name: "testGIF",
-      message: "Insert the path/link to a gif/video of you testing your project, i.e. you running your project demonstrating its functionality"
-    },
-    {
-      type: "input",
-      name: "githubUsername",
-      message: "Enter your Github username"
-    },
-    {
-      type: "input",
-      name: "repoName",
-      message: "Enter the name of the repo you are creating this README.md for"
-    },
-    {
-      type: "input",
-      name: "email",
-      message: "Enter the email address associated with your Github account"
-    }
-  ]);
-}
-
-function generateREADME(answers) {
-  return `
-  # ${answers.repoName}
+  # [object Object]
 
   ## Description
   
-  ${answers.description}
+  Description of project
   
   ## Table of Contents
   
@@ -83,27 +16,26 @@ function generateREADME(answers) {
   
   ## Installation
   
-  ${answers.installation}
+  Installation instructions
   
   ## Usage
   
-  ${answers.usage}
+  Usage instructions
 
   The following is a user story outlining the project's intended usage
 
-  * AS A ${answers.role}
+  AS A student
 
-  * I WANT ${answers.product}
+  I WANT automatically write README.md files
 
-  * SO THAT ${answers.goal}
+  SO THAT so that I don't have to write them myself every time
   
   ## License
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  ## Code size of project
-
-  ![Code size](https://img.shields.io/github/languages/code-size/${answers.githubUsername}/${answers.repoName})
+  Code size of project
+  ![Code size](https://img.shields.io/github/languages/code-size/sbarrow825/Unit-09-Node.js-and-ES6-Homework-Good-README-Generator)
   
   ## Contributions
   
@@ -169,7 +101,7 @@ function generateREADME(answers) {
   
   Instances of abusive, harassing, or otherwise unacceptable behavior may be
   reported to the community leaders responsible for enforcement at
-  ${answers.email}
+  sbarrow825@berkeley.edu
   
   All complaints will be reviewed and investigated promptly and fairly.
   
@@ -240,29 +172,12 @@ function generateREADME(answers) {
   ## Tests
   
   The following is a visual of testing the project, giving you a better idea of the project's functionality
-  ![test GIF/video](${answers.testGIF})
+  ![test GIF/video](kerbal.png)
   
   ## Questions
   
-  ![Github Profile Picture](https://github.com/${answers.githubUsername}.png)
+  ![Github Profile Picture](https://github.com/sbarrow825.png)
   
-  For any questions concerning this project, please feel free to email me at ${answers.email}
+  For any questions concerning this project, please feel free to email me at sbarrow825@berkeley.edu
   
-  `;
-}
-
-async function init() {
-  try {
-    const answers = await promptUser();
-
-    const README = generateREADME(answers);
-
-    await writeFileAsync("test.md", README);
-
-    console.log("Successfully made your personal README.md");
-  } catch(err) {
-    console.log(err);
-  }
-}
-
-init();
+  
