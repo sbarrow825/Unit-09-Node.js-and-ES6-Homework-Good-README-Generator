@@ -30,6 +30,8 @@ In order to run the program, type the following command into your command line w
 node index.js
 ```
 
+The program uses npm inquirer to prompt the user for some information in order to generate a personal README.md file pertaining to their project
+
 ## License
 
 ![MIT License](https://img.shields.io/npm/l/inquirer)
@@ -174,7 +176,13 @@ https://www.contributor-covenant.org/translations.
 
 ## Tests
 
-Insert picture of command line prompts followed by picture of the generated README.md
+The following shows a screenshot of terminal inputs used to run the program
+
+![Terminal inputs](terminalInputs.png)
+
+The following shows the md file generated from the above terminal inputs
+
+![md file](mdFile.mp4)
 
 ## Questions
 
